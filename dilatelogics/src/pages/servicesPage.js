@@ -1,5 +1,6 @@
 import BackgroundText from "../components/BackgroundText";
 import DevelopmentProcess from "../components/developmentProcess";
+import Footer from "../components/footer";
 import GetQuote from "../components/getAquote";
 import Header from "../components/header";
 import Heading from "../components/heading";
@@ -43,6 +44,7 @@ export default function ServicesPage() {
           <DevelopmentProcess />
         </div>
       </div>
+      <Footer />
     </div>
   );
 }
