@@ -24,3 +24,4 @@ function autoSlider(sectionSelector, interval) {
 // Initialize sliders for both sections
 autoSlider('.portfolio', 2000); // Portfolio Section
 autoSlider('.services', 2000);  // Services Section
+
