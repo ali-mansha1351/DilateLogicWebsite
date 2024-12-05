@@ -1,7 +1,9 @@
+import ServicesPage from "./pages/servicesPage";
+
 function App() {
   return (
-    <div className="App">
-      <p>hello world</p>
+    <div style={{ margin: 0 }}>
+      <ServicesPage />
     </div>
   );
 }

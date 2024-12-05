@@ -1,0 +1,34 @@
+.container {
+  flex: 1; /* Allow the component to grow in a Flexbox layout */
+  flex-wrap: wrap;
+  padding: 16px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: auto;
+  margin-top: 20%;
+}
+
+.heading {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+.step {
+  margin-bottom: 16px;
+}
+
+.subheading {
+  font-size: 20px;
+  color: #007bff;
+  margin-bottom: 8px;
+}
+
+.content {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.5;
+}
