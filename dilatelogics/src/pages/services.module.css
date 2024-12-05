@@ -1,0 +1,97 @@
+.mainDiv {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 16px;
+  box-sizing: border-box;
+  overflow-y: auto;
+}
+
+.servicesContainer {
+  display: flex;
+  flex-wrap: wrap; /* Enable wrapping for responsiveness */
+  justify-content: space-between;
+  gap: 32px; /* Add space between child components */
+  margin: 5% auto;
+}
+
+.contentDetail {
+  flex: 1;
+  min-width: 300px; /* Prevent shrinking below 300px */
+  max-width: 700px; /* Limit maximum width for balance */
+}
+
+.sideContainer {
+  flex: 1.5; /* Slightly larger proportion for side content */
+  min-width: 300px;
+  max-width: 400px;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1024px) {
+  .servicesContainer {
+    flex-wrap: wrap; /* Ensure wrapping when space is insufficient */
+    gap: 16px;
+  }
+
+  .sideContainer,
+  .contentDetail {
+    width: 100%; /* Full width for smaller screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .mainDiv {
+    padding: 18px 8px;
+    position: relative;
+  }
+
+  .servicesContainer {
+    gap: 12px;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .contentDetail {
+    flex: 1; /* Ensure equal space */
+  }
+
+  .sideContainer {
+    flex: 1; /* Match the layout proportions */
+    /* padding: 16px 0; */
+  }
+}
+
+@media (max-width: 425px) {
+  .mainDiv {
+    padding: 0 8px; /* Reduce padding for very small screens */
+  }
+
+  .servicesContainer {
+    gap: 10px;
+    flex-direction: row; /* Keep flex layout for narrow screens */
+  }
+
+  .contentDetail {
+    flex: 1;
+    max-width: 100px; /* Ensure it stretches to fill available space */
+  }
+
+  .sideContainer {
+    padding: 8px 0;
+    max-width: 100px; /* Stretch to fill available space */
+  }
+}
+
+@media (max-width: 320px) {
+  .servicesContainer {
+    flex-direction: column; /* Stack components vertically */
+    align-items: center;
+    gap: 16px; /* Add space between stacked elements */
+  }
+
+  .contentDetail,
+  .sideContainer {
+    width: 100%; /* Full width for stacked layout */
+    max-width: 100%; /* Stretch to fit parent */
+  }
+}

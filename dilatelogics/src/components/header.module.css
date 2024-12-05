@@ -1,0 +1,90 @@
+.header {
+  text-align: center;
+  color: black;
+}
+
+.navbarContainer {
+  /* padding: 0 40px; 40px padding on left and right */
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 0; /* 20px padding on top and bottom */
+  width: 100%;
+  background: transparent;
+}
+
+/* Website Name Section */
+.websiteName {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: left;
+  color: black;
+}
+
+/* Navigation Links Section */
+.navlinks {
+  flex-grow: 1; /* Ensures nav links take up the remaining space */
+  display: flex;
+  justify-content: center; /* Centers nav links between the website name and flag */
+}
+
+.navlinks ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.navlinks li {
+  position: relative;
+}
+
+.navlinks a {
+  text-decoration: none;
+  color: #000000;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.navlinks a:hover {
+  color: #f0a5;
+}
+
+.flagContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Outer Circle */
+.outerCircle {
+  width: 50px; /* Adjust size as needed */
+  height: 50px; /* Same as width for a perfect circle */
+  border: 1px solid #fff; /* White border */
+  border-radius: 50%; /* Makes it circular */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 7px; /* Space between the outer and inner circles */
+  background: transparent; /* Background is transparent */
+}
+
+/* Inner Circle */
+.innerCircle {
+  width: 40px; /* Adjust size for the inner circle */
+  height: 40px; /* Same as width for a perfect circle */
+  border-radius: 50%; /* Makes it circular */
+  overflow: hidden; /* Ensures the image stays within the circle */
+}
+
+.innerCircle img {
+  width: 100%; /* Make the image fill the inner circle */
+  height: 100%; /* Make the image fill the inner circle */
+  object-fit: cover; /* Ensures the image covers the area without distorting */
+}

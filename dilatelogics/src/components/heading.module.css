@@ -1,0 +1,11 @@
+.headingDiv {
+  text-align: center;
+  overflow-wrap: break-word;
+  margin: auto;
+  white-space: pre-wrap;
+  font-size: 20px;
+}
+.textWrap {
+  margin: 0;
+  line-height: 1.5;
+}
