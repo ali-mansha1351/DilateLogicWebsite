@@ -1,0 +1,53 @@
+.card {
+  display: flex;
+  flex-direction: column; /* Content within ContentDetail stacks vertically */
+  flex: 1; /* Allows it to scale inside a Flexbox container */
+  max-width: 700px; /* Restrict maximum width */
+  /* margin: 16px; Add spacing around the component */
+}
+
+.image {
+  width: 100%;
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 8px;
+}
+
+.heading {
+  font-size: 1.5rem;
+  margin-top: 16px;
+  color: #333;
+}
+
+.content {
+  font-size: 1.3rem;
+  margin: 8px 0;
+  color: #555;
+  line-height: 1.6;
+}
+
+.listcontainer {
+  display: flex;
+  justify-content: space-between; /* Spread lists evenly */
+  flex-wrap: wrap; /* Allows lists to stack on smaller screens */
+  gap: 16px; /* Add spacing between lists */
+  margin-top: 9px;
+}
+
+.list {
+  flex: 1; /* Ensures lists scale proportionally */
+  /* min-width: 120px; Prevent shrinking below this width */
+  list-style-type: none;
+  font-size: large;
+  padding: 0;
+}
+
+.stackHeading {
+  font-size: 1.4rem;
+  font-weight: bold;
+  /* margin-bottom: 10px; */
+  margin-top: 0;
+}
+
+.list ul {
+  padding-left: 16px; /* Indent for nested lists */
+}
